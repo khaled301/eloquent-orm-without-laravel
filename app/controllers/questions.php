@@ -13,6 +13,13 @@ class Questions {
 
     }
 
+    public static function get_questions_with_answer(){
+
+        $questions = Question::with('answers')->get()->toArray();
+        return $questions;
+
+    }
+
 }
 
 ?>
