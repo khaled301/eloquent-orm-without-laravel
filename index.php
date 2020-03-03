@@ -38,6 +38,13 @@ $all_questions_with_user = Questions::get_questions_with_users();
 print_r($all_questions_with_user);
 */
 
+/*
 // Get One Question With Answers and Upvotes
 $one_question = Questions::get_question_answers_upvotes(1);
 print_r($one_question);
+*/
+
+
+// Count All Questions by a Particular User
+$user_question_count = Users::question_count(1);
+print_r($user_question_count);
