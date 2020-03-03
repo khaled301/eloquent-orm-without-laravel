@@ -13,6 +13,10 @@ class Question extends Model {
         return $this->hasMany('\Models\Answer');
     }
 
+    public function user() {
+        return $this->belongsTo('\Models\User');
+    }
+
 }
 
 ?>

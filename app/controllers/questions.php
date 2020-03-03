@@ -20,6 +20,11 @@ class Questions {
 
     }
 
+    public static function get_questions_with_users() {
+        $questions = Question::with('user')->get()->toArray();
+        return $questions;
+    }
+
 }
 
 ?>

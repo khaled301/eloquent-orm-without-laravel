@@ -26,8 +26,12 @@ $answers = Answers::add_answer("This is the first answer!", 1, 1);
 //$answers = Upvotes::upvote_answer(1, 1);
 */
 
+/*
 //Retrieves the Questions with their corresponding answers
-$all = Questions::get_questions_with_answer();
-print_r($all);
+$all_questions_with_answers = Questions::get_questions_with_answer();
+print_r($all_questions_with_answers);
+*/
 
-?>
+//Retrieve question with user
+$all_questions_with_user = Questions::get_questions_with_users();
+print_r($all_questions_with_user);
