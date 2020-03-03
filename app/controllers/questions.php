@@ -11,6 +11,11 @@ class Questions {
         return $question;
     }
 
+    public static function get_all_asked_questions() {
+        $questions = Question::get()->toArray();
+        return $questions;
+    }
+
     public static function get_questions_with_answer(){
         $questions = Question::with('answers')->get()->toArray();
         return $questions;

@@ -38,7 +38,12 @@ print_r($user_question_count);
 
 //Update Answer by User
 $update_answer = Answers::update_answer(1,"This is an updated answer");
-*/
 
 //Delete a Question (Soft Delete)
 $delete_question = Questions::delete_question(2);
+*/
+
+// Get all asked questions (to check soft delete is working or not)
+$all_questions = Questions::get_all_asked_questions();
+print_r($all_questions);
+
