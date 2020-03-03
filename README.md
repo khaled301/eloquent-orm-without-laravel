@@ -4,6 +4,8 @@
 
 ## IMPORTANT
 
+This is an exercise project.
+
 In the main project directory, we have to create a file named config.php and define DB details
 in the Config.php file. Note that the values should be replaced with your own connection details.
 
