@@ -36,7 +36,9 @@ print_r($one_question);
 $user_question_count = Users::question_count(1);
 print_r($user_question_count);
 
-
-*/
 //Update Answer by User
 $update_answer = Answers::update_answer(1,"This is an updated answer");
+*/
+
+//Delete a Question (Soft Delete)
+$delete_question = Questions::delete_question(2);

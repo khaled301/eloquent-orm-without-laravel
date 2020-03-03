@@ -26,6 +26,12 @@ class Questions {
         return $questions;
     }
 
+    public static function delete_question($question_id) {
+        $question = Question::find($question_id);
+        $deleted = $question->delete();
+        return $deleted;
+    }
+
 }
 
 ?>
